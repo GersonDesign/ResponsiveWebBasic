@@ -1,0 +1,159 @@
+
+/*Ponemos el tamaño de letra en 16px, para sea legible al momento de leer*/
+body{
+	font-family: 'arial',sans-serif;
+	font-size: 16px;
+}
+
+img{
+	max-width: 100%;
+}
+
+header{
+	text-align: center;
+	width: 100%;
+}
+
+nav {
+	margin: 0;	
+	padding: 0;
+	width: 100%;
+}
+
+.menu{
+	padding: 0;
+	width: 100%;
+}
+nav .menu li{
+	background: #593325;
+	display: block;
+	padding: 10px 0;
+	margin: 10px 0 10px 0;
+	text-align: center;
+}
+
+nav .menu li a{
+	color:white;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+	
+.content{
+	margin: 0 auto;
+	width: 90%;
+}
+
+
+.container aside{
+	display: none;
+}
+
+
+.container .productos article{
+	background: #C0D8E5;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 3px 5px 3px gray;
+	height: 300px;
+	text-align: center;
+
+}
+
+.container .productos article h2{
+	color:#593325; /*Se cambio el color white por el marron que tiene el nav*/
+	text-shadow: 2px 3px 1px gray; /*Se mejoro la sombra*/
+}
+
+.container .productos article figure img{
+	border-radius: 50%;
+	border:5px solid #593325;
+	height: 200px;
+	width: 200px;
+
+}
+
+footer{
+	background: #591B1B;
+	color:white;
+	margin: 20px 0 0 0;
+	position: absolute;
+	
+	text-align: center;
+	width: 100%;
+}
+
+footer p{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 0 ;
+
+}
+
+
+@media screen and (min-width: 600px){
+	.container .productos{
+		overflow: hidden;
+	}
+	.container .productos article{
+		float: left;
+		margin: 15px 10px;
+		width: 30%;
+	}
+}
+
+
+@media screen and (min-width: 900px){
+	
+	header{
+		text-align: left;
+	}
+
+	nav{
+		background: #593325;
+	}
+	nav .menu li{		
+		display: inline-block;
+		margin: 0 10px;
+		width: 21%;
+	}
+
+	nav .menu li a{
+		color:gray;
+		transition:0.5s ease-in-out;
+		-webkit-transition:0.5s ease-in-out;
+		-moz-transition:0.5s ease-in-out;
+		-o-transition:0.5s ease-in-out;
+		-ms-transition:0.5s ease-in-out;
+	}
+
+	nav .menu li a:hover{
+		text-decoration: underline;
+		color:white;
+	}
+
+	.container{
+		overflow: hidden;
+	}
+
+	.container .productos{
+		float:left;
+		width: 81%;
+	}
+	.container aside{
+		display: block;
+	}
+
+
+
+	.container .promociones{
+		float:right;		
+	}
+
+	.container aside figure{
+		margin:0;
+	}
+
+}
+
+
